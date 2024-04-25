@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background: none;
+}
+
+body.darkMode {
+    background-color: rgb(188, 130, 89);
+    color: white;
+
+}
+
+.icon {
+    cursor: pointer;
+    float: right;
+    margin-top: -8px;
+    margin-right: 50px;
+    font-size: 40px;
+    color: rgb(188, 130, 89);
+}
+
+.darkMode .logoText p {
+    color: white;
+}
+
+.darkMode .logoText p:hover {
+    color: black;
+}
+
+body.darkMode .icon {
+    color: white
+}
+
+body.darkMode .icon:hover {
+    color: rgba(0, 0, 0, 0.556);
+    font-weight: 600;
+}
+
+.darkMode>.home_page {
+    background-color: rgb(188, 130, 89);
+}
+
+.darkMode a,
+p {
+    color: white;
+
+    border-bottom: 2px solid white;
+}
+
+.darkMode .login {
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.darkMode .login:hover {
+    color: white;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+.darkMode .logoText p {
+    font-size: 40px;
+    color: black;
+    border-bottom: 2px solid white;
+
+}
+
+.darkMode .logoText p:hover {
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.darkMode .navigation a {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.darkMode .navigation a:hover {
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    ;
+}
+
+.navigation.active {
+    right: 0;
+}
+
+.home_page {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.nav_bar {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation a {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.logoText p:hover {
+    font-size: 40px;
+    border-bottom: 2px solid rgb(188, 130, 89);
+    padding: 10px;
+    transition: .4s;
+}
+
+.navigation a:hover {
+    color: rgb(188, 130, 89);
+    font-weight: 600;
+    border-bottom: 2px solid rgb(188, 130, 89);
+}
+
+.login {
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.login:hover {
+    color: rgb(188, 130, 89);
+    font-weight: 600;
+    border: 1px solid rgb(188, 130, 89);
+}
+
+.hamburger {
+    display: none;
+}
+
+.logoText p {
+    color: black;
+    font-size: 40px;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.logoText p:hover {
+    color: rgb(188, 130, 89);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.dark-mode-btn {
+    cursor: pointer;
+    float: right;
+    padding: 10px;
+    margin-top: -16px;
+    margin-right: 50px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .navigation a {
+        font-size: 20px;
+    }
+
+    .login {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    .navigation {
+        left: -150%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background-color: rgb(188, 130, 89);
+        height: 100vh;
+        transition: .4s;
+
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    .navigation a {
+        color: black;
+        font-size: 30px;
+    }
+
+    .navigation a:hover {
+        color: black;
+        border-bottom: 2px solid white;
+        padding: 10px;
+        font-weight: 500;
+        transition: .4s;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 999;
+    }
+
+    .hamburger img {
+        max-width: 80px;
+        z-index: 999;
+
+    }
+
+    .hamburger img:hover {
+        color: black;
+        border-bottom: 2px solid white;
+        padding: 5px;
+        font-weight: 500;
+        transition: .4s;
+    }
+
+    .logoText {
+        display: block;
+        font-size: 40px;
+        color: black;
+    }
+
+    .login {
+        display: none;
+    }
+}
